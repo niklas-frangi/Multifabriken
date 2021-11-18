@@ -11,7 +11,6 @@ namespace multifabriken_niklas_frangi
         public string brand;
         public Car(string letterPlate, int numberPlate, string color, string brand)
         {
-
             this.letterPlate = letterPlate;
             this.numberPlate = numberPlate;
             this.color = color;

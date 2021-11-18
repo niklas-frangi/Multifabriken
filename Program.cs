@@ -14,6 +14,7 @@ namespace multifabriken_niklas_frangi
             List<Candy> candyList = new List<Candy>();
             List<Tofu> tofuList = new List<Tofu>();
             List<String> stringList = new List<String>();
+
             while (true)
             {
                 theMenu.printMenu();

@@ -132,40 +132,24 @@ namespace multifabriken_niklas_frangi
                     }
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine();
-                    var milliseconds4 = 700;
-                    Thread.Sleep(milliseconds4);
+                    var delay4 = 700;
+                    Thread.Sleep(delay4);
                     do
                     {
                         while (!Console.KeyAvailable)
                         {
                             Console.ForegroundColor = ConsoleColor.White;
                             System.Console.Write("\r Tryck på Enter för att återgå till menyn.");
-                            var milliseconds2 = 700;
-                            Thread.Sleep(milliseconds2);
+                            var delay2 = 600;
+                            Thread.Sleep(delay2);
                             Console.ForegroundColor = ConsoleColor.Black;
                             System.Console.Write("\r Tryck på Enter för att återgå till menyn.");
-                            var milliseconds3 = 700;
-                            Thread.Sleep(milliseconds3);
+                            var delay3 = 600;
+                            Thread.Sleep(delay3);
                         }
                     } while (Console.ReadKey(true).Key != ConsoleKey.Enter);
                     Console.ForegroundColor = ConsoleColor.Gray;
-                    System.Console.WriteLine("Hur mycket (heltal i liter) tofu vill du beställa?");
-                    int tofuAmount = Convert.ToInt32(Console.ReadLine());
-                    System.Console.WriteLine();
-                    System.Console.WriteLine("Vilken kryddning vill du ha i din tofu?");
-                    string tofuSeasoning = Console.ReadLine();
-                    System.Console.WriteLine();
-                    Tofu newTofu = new Tofu(tofuSeasoning, tofuAmount);
-                    newTofu.addTofuToList(newTofu);
-                    Console.Clear();
-                    Console.ForegroundColor = ConsoleColor.White;
-                    System.Console.WriteLine($"Du har beställt {tofuAmount} liter tofu med kryddningen {tofuSeasoning}.");
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    System.Console.WriteLine();
-                    break;
 
-                case 5:
-                    // Skriva ut listor
                     Console.Clear();
                     break;
 
@@ -184,8 +168,9 @@ namespace multifabriken_niklas_frangi
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.WriteLine();
-                    var milliseconds = 1000;
-                    Thread.Sleep(milliseconds);
+                    var delay = 1000;
+                    Thread.Sleep(delay);
+
                     break;
             }
             return true;
