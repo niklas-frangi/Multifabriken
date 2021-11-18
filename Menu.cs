@@ -19,8 +19,8 @@ namespace multifabriken_niklas_frangi
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("6. Avsluta programmet.");
             Console.ForegroundColor = ConsoleColor.Gray;
-            System.Console.WriteLine();
-            System.Console.Write("Skriv här: ");
+            Console.WriteLine();
+            Console.Write("Skriv här: ");
         }
     }
 }

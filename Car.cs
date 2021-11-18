@@ -8,9 +8,7 @@ namespace multifabriken_niklas_frangi
         public string letterPlate;
         public int numberPlate;
         public string color;
-        public string brand;        
-        public List<Car> carList = new List<Car>();
-        
+        public string brand;
         public Car(string letterPlate, int numberPlate, string color, string brand)
         {
 
@@ -19,20 +17,5 @@ namespace multifabriken_niklas_frangi
             this.color = color;
             this.brand = brand;
         }
-
-        public void addCarToList(Car newCar)
-        {
-            carList.Add(newCar);
-        }
-
-        public void printCarlist()
-        {
-            System.Console.WriteLine("Listan med bilar:");
-            foreach (Car car in carList)
-            {
-                System.Console.WriteLine($"- En {car.color} {car.brand} med registreringsnumret {car.letterPlate}{car.numberPlate}");
-            }
-        }
-
     }
 }

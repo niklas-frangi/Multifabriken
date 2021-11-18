@@ -10,28 +10,22 @@ namespace multifabriken_niklas_frangi
             Welcome welcomeMsg = new Welcome();
             welcomeMsg.printWelcomeMessage();
             Menu theMenu = new Menu();
-
+            List<Car> carList = new List<Car>();
+            List<Candy> candyList = new List<Candy>();
+            List<Tofu> tofuList = new List<Tofu>();
+            List<String> stringList = new List<String>();
             while (true)
             {
                 theMenu.printMenu();
                 int menuChoice = Convert.ToInt32(Console.ReadLine());
-                Choices newChoice = new Choices();
-                newChoice.makeChoice(menuChoice);                
+                Choices newChoice = new Choices(carList, candyList, tofuList, stringList);
+                bool cont = newChoice.makeChoice(menuChoice);
+                if (!cont)
+                {
+                    return;
+                }
             }
 
         }
     }
 }
-
-
-
-/* Fullösning med return
-
-if (menuChoice == 6)
-{
-    return;
-}
-else
-{
-    newChoice.makeChoice(menuChoice);
-} */
