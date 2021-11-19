@@ -106,7 +106,7 @@ namespace multifabriken_niklas_frangi
                     Console.Write("           ");
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.BackgroundColor = ConsoleColor.Green;
-                    Console.Write("Det här har du beställt");
+                    Console.Write(" Det här har du beställt ");
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.WriteLine();
                     Console.WriteLine();
@@ -139,24 +139,23 @@ namespace multifabriken_niklas_frangi
                         while (!Console.KeyAvailable)
                         {
                             Console.ForegroundColor = ConsoleColor.White;
-                            System.Console.Write("\r Tryck på Enter för att återgå till menyn.");
+                            Console.Write("\r Tryck på Enter för att återgå till menyn.");
                             var delay2 = 600;
                             Thread.Sleep(delay2);
                             Console.ForegroundColor = ConsoleColor.Black;
-                            System.Console.Write("\r Tryck på Enter för att återgå till menyn.");
+                            Console.Write("\r Tryck på Enter för att återgå till menyn.");
                             var delay3 = 600;
                             Thread.Sleep(delay3);
                         }
                     } while (Console.ReadKey(true).Key != ConsoleKey.Enter);
                     Console.ForegroundColor = ConsoleColor.Gray;
-
                     Console.Clear();
                     break;
 
                 case 6:
                     // Avsluta program
                     Console.Clear();
-                    System.Console.WriteLine("Programmet har avslutats.");
+                    Console.WriteLine("Programmet har avslutats.");
                     return false;
 
                 default:
@@ -170,7 +169,6 @@ namespace multifabriken_niklas_frangi
                     Console.WriteLine();
                     var delay = 1000;
                     Thread.Sleep(delay);
-
                     break;
             }
             return true;
