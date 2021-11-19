@@ -26,7 +26,6 @@ namespace multifabriken_niklas_frangi
                     return;
                 }
             }
-
         }
     }
 }

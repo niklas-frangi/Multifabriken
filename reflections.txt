@@ -1,0 +1,20 @@
+13. Koden är strukturerad på en objektorienterade sätt där jag har skapat klasser med konstruktorer för varje nytt föremål som skapas i fabriken.
+Förutom de klasser som används vid skapandet av nya föremål har jag även en klass för välkomstmeddelandet, menyn och en klass som hanterar
+de val som användaren gör.
+När ett nytt objekt skapas tar konsolen emot input från användaren som tilldelas till variabler som skickas till respektive konstruktor och sedan sparas i
+tillhörande lista.
+Koden innehåller fyra stycken listor som hanterar de olika objekten som kan skapas i fabriken. Listorna skrivs ut med hjälp av en foreach-loop 
+på varje lista.
+Programmet avslutas genom att värdet false skickas tillbaka till Program.cs som kör kör menyn i en loop tills bool-värdet blir false.
+
+
+14. Jag strukturerade koden med hjälp av klasser så att det ska bli lätt att direkt få en överblick över vad programmet gör. Genom att skapa 
+en klass för varje nytt objekt blir det lättare att modifiera enskilda delar av programmet, till exempel om man skulle vilja ändra eller lägga till fler variabler 
+i konstruktorerna för ett objekt, ändra välkomstmeddelandet eller lägga till fler alternativ till Choices.cs.
+
+Klasserna och variablerna har tydliga och beskrivande namn så att en annan programmerare snabbt kan sätta sig in i koden och se ungefär vad koden ska göra. 
+
+Jag tycker att klassen Choices blev lite väl stor till slut och skulle nu i efterhand kunnat dela in varje alternativ i en egen fil och använda Choices.cs som en mellanhand mellan Program.cs och det valda alternativet.
+
+Även om vi precis har börjat med OOP så ser jag definitivt varför man väljer att programmera på det sättet och tycker själv att koden blir 
+mycket mer överskådlig. I slutet av förra kursen började vi dela in vår JS-kod i metoder vilket påminner en del om hur vi jobbar i den här kursen.
